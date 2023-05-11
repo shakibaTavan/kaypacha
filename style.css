@@ -1,4 +1,6 @@
 
+@import url(color.css);
+@import url(typography.css);
 
 
 header {
@@ -9,9 +11,21 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #F5EEEB;
+  background-color: var(--color-tertiary);
+}
+
+nav{
+  display: flex;
+
 }
 
 .logo {
   
 }
+
+li{
+  font-size: var(--text-sm);
+  font-family: var(--font-h2h3);
+}
+
+

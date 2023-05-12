@@ -14,18 +14,33 @@ header {
   background-color: var(--color-tertiary);
 }
 
-nav{
+ul{
   display: flex;
-
+  justify-content: center;
+  background-color: var(--color-tertiary);
 }
 
-.logo {
-  
-}
-
-li{
+li {
+  display: inline-block;
   font-size: var(--text-sm);
   font-family: var(--font-h2h3);
+  color: var(--color-primary);
+  text-align: center;
+  padding: 14px 16px;
 }
+
+li:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.home-banner {
+
+}
+
+
+
+
+
 
 

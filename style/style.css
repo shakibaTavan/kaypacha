@@ -38,6 +38,29 @@ li:hover {
   font-weight: 600;
 }
 
+.search-container {
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
 .search {
   border-radius: 2rem;
+  border-color: var(--color-primary);
+
+
 }
+
+.search-icon {
+  position: absolute;
+  height: 3vh;
+  padding-left: 18vh;
+}
+
+
+
+

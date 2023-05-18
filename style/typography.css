@@ -3,9 +3,9 @@
 
 :root {
     /* H1 */ 
-    --font-h1: 'Righteous', cursive;
+    --special-headings: 'Righteous', cursive;
     /* H2h3 */
-    --font-h2h3: 'Noto Sans', sans-serif;
+    --main: 'Noto Sans', sans-serif;
     /* Base values */ 
     --text-base-size: 15rem;
     /* Type scale */

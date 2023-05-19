@@ -3,6 +3,7 @@
 
 html {
   box-sizing: border-box;
+  
 }
 
 *,
@@ -21,7 +22,7 @@ html {
 }
 
 
-.cart {
+.logo-banner__cart {
   height: 40px;
   align-self: flex-end;
   padding-right: 50px;
@@ -47,7 +48,7 @@ li:hover {
   font-weight: 600;
 }
 
-.search-container {
+.search {
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -58,10 +59,7 @@ li:hover {
   padding-bottom: 1vh;
 }
 
-
-
-
-.search-input {
+.search__input {
   border-radius: 2rem;
   outline-color: var(--color-primary);
   border-width: thin;
@@ -71,28 +69,32 @@ li:hover {
   font-weight: lighter;
 }
 
-.search-icon {
+.search__icon {
   height: 3vh;
   position: absolute;
   padding-left: 160px;
 }
 
-.home-banner > img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
 
-.home-banner {
+
+.banner {
+  font-family: var(--main);
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
 }
 
-.overlay {
-  background-color: white;
+.banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__overlay {
+  background-color: rgb(128, 128, 128, 0.2);
   opacity: 0;
   position: absolute;
   display: flex;
@@ -102,42 +104,128 @@ li:hover {
   align-items: center;
   width: 0%;
   height: 100%;
-  transition: all 0.9s ease;
+  transition: all 0.5s ease;
 }
 
-.home-banner:hover .overlay {
-  opacity: 0.5;
+.banner:hover .banner__overlay {
+  opacity: 1;
   width: 100%;
   transition: all 0.2s ease;
 }
-.overlay > h1{
-  font-family: var(--main);
-  font-size: var(‐‐text‐xl);
+
+.banner__overlay > h1{
+  font-size: 3rem;
+  padding-bottom: 6vh;
+  font-weight: 1000;
+  color: white;
   transform: scale(0);
   transition: all 0.2s ease;
   width: 20%;
   text-align: center;
+  opacity: 1;
 }
 
-
-  
-.overlay > p{
-  font-family: var(--main);
-  font-size: var(--text-lg);
+.banner__overlay > p{
+  color: white;
+  font-weight: 800;
+  line-height: 150%;
   transform: scale(0);
+  padding-bottom: 4vh;
   transition: all 0.2s ease;
-  width: 20%;
+  width: 10%;
   text-align: center;
+  opacity: 1;
 }
   
-.home-banner:hover .overlay > h1 {
+.banner:hover .banner__overlay > h1 {
   transform: scale(1);
   transition: all 0.2s ease;
 }    
-.home-banner:hover .overlay > p {
+.banner:hover .banner__overlay > p {
   transform: scale(1);
   transition: all 0.2s ease;
 }    
+
+
+
+
+.popular {
+  padding-top: 1vh;
+}
+
+.popular > h1 {
+  color: var(--color-primary);
+  font-size: var(--text-xxxl);
+  font-family: var(--special-headings);
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.popular-items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 150px;
+
+}
+
+
+
+.popular-items__card {
+  background-color: var(--color-secondary);
+  width: 200px;
+  border-radius: 10%;}
+
+.popular-items__card > a {
+  
+
+}
+
+.popular-items__image {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+}
+
+
+
+/*
+
+form {
+  width: 50em;
+  background-color: var(--color-tertiary);
+  padding: 1vw;
+  font-family: var(--main);
+  border: 2px var(--color-primary);
+}
+
+form label {
+  display: inline-block;
+  width: 10em;
+}
+
+form input, textarea {
+  width: 45em;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  border-radius: 0.2vw;
+}
+
+input[type="submit"] {
+  width: 10vw;
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+input:valid {
+  background-color: lightseagreen;
+}
+
+input:invalid {
+  background-color: tomato;
+}*/
+
+
 
 .btn {
   text-decoration: none;
@@ -158,4 +246,22 @@ li:hover {
   color: var(--color-tertiary);
   transform:translateY(-1px)
 }
+
+
+
+.btn-secondary {
+  font-family: var(--special-headings);
+  border: 5px solid var(--color-secondary);
+  opacity: 1;
+  background-color: white;
+  color: var(--color-secondary);
+  border-radius: 25px;
+}
+
+.btn-secondary:hover {
+
+  color: var(--color-tertiary);
+  transform:translateY(-1px)
+}
+
 

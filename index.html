@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="function.js"></script>
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
         <title>kaypacha</title>
@@ -17,16 +18,22 @@
                     src="images/🦆 icon _shopping bag_.png"
                     alt="shopping cart Icon">
             </div>
-            <nav>
+
+            <nav class="navBar" id="navBarDisplay">
                 <ul>
                     <li>
                         Home
                     </li>
-                    <li>
-                        Instruments
-                    </li>
-                    <li>
-                        Home
+                    <li class="dropdown">
+                        <button class="dropdown__btn">Instruments
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown__items">
+                            <a href="#">Kalimbas</a>
+                            <a href="#">Drums
+                            </a>
+                            <a href="#">Flutes</a>
+                        </div>
                     </li>
                     <li>
                         Music
@@ -44,7 +51,13 @@
                         Support
                     </li>
                 </ul>
+                <a
+                    href="javascript:void(0);"
+                    style="font-size:15px;"
+                    class="icon"
+                    onclick="myFunction()">&#9776;</a>
             </nav>
+
         </header>
         <section class="search">
             <input class="search__input" type="text" placeholder="Search..">
@@ -53,32 +66,33 @@
         <section class="banner">
             <div class="banner__overlay">
                 <h1>Shop Unique Instruments</h1>
-                <p>For several years we have been researching some musical instruments from various cultures of the planet, many of them are lost as time goes by. </p>
+                <p>For several years we have been researching some musical instruments from
+                    various cultures of the planet, many of them are lost as time goes by.
+                </p>
                 <a class="btn btn-primary">SHOP NOW</a>
-              </div>
-        <img src="images/backPhoto1.jpg" alt="group of instruments">
+            </div>
+            <img src="images/backPhoto1.jpg" alt="group of instruments">
         </section>
 
         <section class="popular">
             <h1>Popular Collections</h1>
             <div class="popular-items">
-            <div class="popular-items__card">
-                <img class="popular-items__image" src="images/popular-item1.png" alt="Kalima">
-                <a class="btn btn-secondary">Kalimba</a>
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item1.png" alt="Kalima">
+                    <a class="btn btn-secondary">Kalimba</a>
+                </div>
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item2.png" alt="Djembe">
+                    <a class="btn btn-secondary">Djembe</a>
+                </div>
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item3.png" alt="Udu Drum">
+                    <a class="btn btn-secondary">Udu Drum</a>
+                </div>
             </div>
-            <div class="popular-items__card">
-            <img class="popular-items__image" src="images/popular-item2.png" alt="Djembe">
-            <a class="btn btn-secondary">Djembe</a>
-            </div>
-            <div class="popular-items__card">
-                <img class="popular-items__image" src="images/popular-item3.png" alt="Udu Drum">
-                <a class="btn btn-secondary">Udu Drum</a>
-            </div>
-        </div>
         </section>
         <main></main>
         <footer></footer>
-
 
     </body>
 </html>

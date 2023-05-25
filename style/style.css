@@ -68,6 +68,11 @@ html {
   margin: 0;
 }
 
+.navBar li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .dropdown__items {
   display: none;
   position: absolute;
@@ -87,7 +92,6 @@ html {
 }
 
 .navBar li:hover, .dropdown:hover .dropdown__btn {
-  text-decoration: underline;
   font-weight: 600;
 }
 
@@ -212,12 +216,13 @@ html {
 
 .banner__overlay > p{
   color: white;
+  font-size: 20px;
   font-weight: 800;
   line-height: 150%;
   transform: scale(0);
   padding-bottom: 4vh;
   transition: all 0.2s ease;
-  width: 10%;
+  width: 20%;
   text-align: center;
   opacity: 1;
 }
@@ -240,10 +245,11 @@ html {
 
 .popular > h1 {
   color: var(--color-primary);
-  font-size: var(--text-xxxl);
+  font-size: 25px;
   font-family: var(--special-headings);
   text-align: center;
-  padding-bottom: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
 }
 
 .popular-items {
@@ -259,17 +265,26 @@ html {
 .popular-items__card {
   background-color: var(--color-secondary);
   width: 200px;
-  border-radius: 10%;}
-
-.popular-items__card > a {
+  height: 300px;
+  border-radius: 10%;
+  position: relative;
+}
   
 
-}
 
 .popular-items__image {
-  width: 100%;
-  height: 100%;
   max-width: 200px;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+.popular-items__card > a {
+  position: absolute;
+  margin-top: 170%;
+  width: 13vw;
+  text-align: center;
+  margin-left: 5%;
 }
 
 
@@ -310,7 +325,11 @@ input:invalid {
   background-color: tomato;
 }*/
 
-
+.currentLocation {
+  text-decoration: underline;
+  color: black;
+  font-weight: 1000;
+}
 
 .btn {
   text-decoration: none;
@@ -344,8 +363,8 @@ input:invalid {
 }
 
 .btn-secondary:hover {
-
-  color: var(--color-tertiary);
+  background-color: var(--color-secondary);
+  color: white;
   transform:translateY(-1px)
 }
 

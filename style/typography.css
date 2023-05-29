@@ -6,21 +6,17 @@
     --special-headings: 'Righteous', cursive;
     /* H2h3 */
     --main: 'Noto Sans', sans-serif;
-    /* Base values */ 
-    --text-base-size: 15rem;
+    /* Base value */ 
+    --text-base-size: 1 rem; 
     /* Type scale */
-        ‐‐text‐scale‐ratio: 1.2;
-        ‐‐text‐xs: calc(15rem / (var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio)));
-        ‐‐text‐sm: calc(15rem / var(‐‐text‐scale‐ratio));
-        ‐‐text‐md: calc(15rem * var(‐‐text‐scale‐ratio));
-        ‐‐text‐lg: calc(15rem * var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio));
-        ‐‐text‐xl: calc(15rem * var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio) *
-        var(‐‐text‐scale‐ratio));
-        ‐‐text‐xxl: calc(15rem * var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio) *
-        var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio));
-        ‐‐text‐xxxl: calc(15rem * var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio) *
-        var(‐‐text‐scale‐ratio) * var(‐‐text‐scale‐ratio) *
-        var(‐‐text‐scale‐ratio));
-        }
+    --text-scale-ratio: 1.2;
+    --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
+    --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+}
 
  

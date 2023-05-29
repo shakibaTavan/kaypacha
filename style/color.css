@@ -3,7 +3,9 @@
     --color-primary: #3B5646;
     --color-secondary: #FF9183;
     --color-tertiary: #F5EEEB;
-    --color-black: #000000;
+    --basic-dark: #000000;
+    --basic-light: #FFFFFF;
+    --basic-medium: #717171;
 }
 
 

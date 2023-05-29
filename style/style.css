@@ -13,6 +13,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-size: var(--text-base-size);
+}
+
 .logo-banner {
   display: flex;
   justify-content: space-between;
@@ -161,7 +165,7 @@ html {
 .search__icon {
   height: 3vh;
   position: absolute;
-  padding-left: 160px;
+  margin-left: 155px;
 }
 
 
@@ -241,23 +245,16 @@ html {
 
 .popular {
   padding-top: 1vh;
+  background-color: var(--color-tertiary);
 }
 
-.popular > h1 {
-  color: var(--color-primary);
-  font-size: 25px;
-  font-family: var(--special-headings);
-  text-align: center;
-  padding-top: 1vh;
-  padding-bottom: 3vh;
-}
 
 .popular-items {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 150px;
-
+  background-color: var(--color-tertiary);
 }
 
 
@@ -287,6 +284,27 @@ html {
   margin-left: 5%;
 }
 
+
+footer{
+  height:50vh;
+  width:100%;
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  gap: 2vh;
+}
+  
+footer > img{
+  height:10%;
+} 
+
+footer > p{
+  color: var(--basic-medium);
+}
+
+    
 
 
 /*
@@ -368,7 +386,13 @@ input:invalid {
   transform:translateY(-1px)
 }
 
-
+.special-title {
+  color: var(--color-primary);
+  font-family: var(--special-headings);
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+}
 
 
 

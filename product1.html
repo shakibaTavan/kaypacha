@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="function.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <title>kaypacha</title>
+    </head>
+    <div id="dimmer"></div>
+    <body>
+        <header>
+            <div class="logo-banner">
+                <img src="images/logo1.svg">
+                <img
+                    class="logo-banner__cart"
+                    src="images/🦆 icon _shopping bag_.png"
+                    alt="shopping cart Icon">
+                <div class="icon-container">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            </div>
+
+            <nav class="navBar" id="navBarDisplay">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown currentLocation">
+                        <a class="dropdown__btn">
+                            <a>Instruments</a>
+                            <i class="fa fa-caret-down"></i>
+                            </a>
+                        <div class="dropdown__items">
+                            <a href="#">Kalimbas</a>
+                            <a href="#">Drums</a>
+                            <a href="#">Flutes</a>
+                        </div>
+                    </li>
+                    <li>
+                        Music
+                        <a href="music.html"></a>
+                    </li>
+                    <li>
+                        Tutorials
+                    </li>
+                    <li>
+                        Contact
+                        <a href="contact.html"></a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        Support
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <section class="search">
+                <input class="search__input" type="text" placeholder="Search..">
+                <a href="instruments.html">
+                <img class="search__icon" src="images/search_icon.png" alt="search Icon">
+                </a>
+            </section>
+        <section class="item">
+            <section class="item-container">
+                <section class="item__section-a">
+                    <h1 class="main-title">Bondi Ripple Koa Kalimba</h1>
+                    <div class="item-a__img"> 
+                        <img src="images/Kalimbas/BondiBrownRippleKoa.png" alt="Bondi Ripple Kalimba">
+                    </div>
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9734; 4/5</p>
+                </section>
+                <section class="item__section-b">
+                    <p> Koa is one of the most highly sought after woods in musical instruments, and even high end furniture. From ukuleles to acoustic guitars, luthiers have been building world class instruments with Koa.
+                        And now you can get a Kalimba constructed from this beautiful wood. 
+                        <br>
+                        <br>
+                        Koa is cherished for its wonderful wood grain striping and natural orange highlights. Its tone is rich and balanced. Not too bright and not too boomy.
+                        Like all of the Bondi Kalimbas you'll find 17 polished and rounded tines for easy playing. <span id="cut"></span>
+                        </span> 
+                        <br>
+                        <br>
+                        <span id="extra">The body has rounded edges so the Kalimba fits comfortably in your hands.
+                        This well constructed Kalimba is finished off with a pearl inlay rosette around the sound hole.</span></p>
+                        <a class="btn-plain" onclick="myFunction()" id="read-btn">read more</a>
+                    <h1 class="main-title">$50</h1>
+                    
+                    <div class="add-tools">
+                        <div class="quantity">
+                            <a class="quantity__btn">
+                                <i class="fa fa-caret-down"></i>
+                                <a>x1</a>
+                                </a>
+                            <div class="quantity__items">
+                                <a href="#">x1</a>
+                                <a href="#">x2</a>
+                                <a href="#">x3</a>
+                            </div>
+                            </div>
+                        <div>
+                        <div class="message btn btn-secondary" onclick="added()">ADD TO CART
+                            <div class="message-content" id="added-message">
+                                <a class="close-btn">&#x2716;</a>
+                                <h1 class="main-title">Bondi Ripple Koa Kalimba</h1>
+                                <h2 class="special-title">Successfully added to Cart &#10004;</h2>
+                                <a href="cart.html" class="btn btn-primary-inverse">VIEW CART</a>
+                                <br>
+                                <br>
+                                <a class="btn-plain">Shop More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+            </section>
+        </section>
+
+        <section class="popular">
+            <h1 class="special-title">Popular Collections</h1>
+            <div class="popular-items">
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item1.png" alt="Kalima">
+                    <a class="btn btn-secondary">KALIMBA</a>
+                </div>
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item2.png" alt="Djembe">
+                    <a class="btn btn-secondary">DJEMBE</a>
+                </div>
+                <div class="popular-items__card">
+                    <img class="popular-items__image" src="images/popular-item3.png" alt="Udu Drum">
+                    <a class="btn btn-secondary">UDU DRUM</a>
+                </div>
+            </div>
+        </section>
+    </main>
+        </main>
+        <footer>
+            <h1 class="special-title">Keep in touch!</h1>
+            <img src="images/home/social media.svg" alt="soocial media icons">
+            <p>Site created by Kaypacha - Córdoba Argentina, Copyright © 1993-2023 kaypacha.com.ar
+                All elements of this website, including graphics and multimedia content, are protected by copyright.</p>
+        </footer>
+
+
+        </body>
+
+        </html>

@@ -7,7 +7,7 @@
     /* H2h3 */
     --main: 'Noto Sans', sans-serif;
     /* Base value */ 
-    --text-base-size: 1 rem; 
+    --text-base-size: 1em; 
     /* Type scale */
     --text-scale-ratio: 1.2;
     --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));

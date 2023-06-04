@@ -6,4 +6,28 @@ function myFunction() {
       x.className = "navBar";
     }
   }
+
+  function myFunction() {
+    var cut = document.getElementById("cut");
+    var moreText = document.getElementById("extra");
+    var btnText = document.getElementById("read-btn");
+  
+    if (cut.style.display === "none") {
+      cut.style.display = "inline";
+      btnText.innerHTML = "read more";
+      moreText.style.display = "none";
+    } else {
+      cut.style.display = "none";
+      btnText.innerHTML = "read less";
+      moreText.style.display = "inline";
+    }
+  }
+  
+
+  function added() {
+    var message = document.getElementById("added-message");
+    var overlay = document.getElementById("dimmer");
+    message.classList.toggle("show");
+    dimmer.classList.toggle("show");
+  }
   

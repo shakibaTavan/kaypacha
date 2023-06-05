@@ -33,11 +33,12 @@ body {
   flex-direction: column;
 }
 
-.logo-banner__cart {
+.logo-banner__cart{
   height: 40px;
   align-self: flex-end;
-  padding-right: 50px;
+  padding-right: 10%;
 }
+
 
 .navBar {
   overflow: hidden;
@@ -46,28 +47,25 @@ body {
   background-color: var(--color-tertiary);
 }
 
+
 .navBar li {
   display: inline-block;
   font-size: var(--text-md);
   color: var(--color-primary);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
 }
 
 .icon-container {
-  align-self: flex-start;
-  padding-left: 50px;
+  position: absolute;
+  top: 16%; 
+  left: 10% ;
 }
 
 .icon {
   color: var(--color-primary);
-  font-size: var(--text-xl);
+  font-size: var(--text-xxl);
   display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
 }
 
 .dropdown .dropdown__btn {
@@ -130,24 +128,32 @@ body {
 
 @media screen and (max-width: 600px) {
   .navBar.responsive {
-    position: relative;
+    position: absolute; 
+    top: 0;
+    width: 50%;
+    background-color: var(--color-primary);
+    z-index: 2; 
+    height: 100vh;
   }
+
   .navBar.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    color: var(--color-tertiary);
   }
 
   .navBar.responsive li {
     float: none;
     display: block;
     text-align: left;
+    color: var(--color-tertiary);
+    padding-top: 20%;
   }
   .navBar.responsive .dropdown {
     float: none;
   }
   .navBar.responsive .dropdown__items {
     position: relative;
+    color: var(--color-primary);
   }
   .navBar.responsive .dropdown .dropdown__btn {
     display: block;
@@ -300,6 +306,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 5vh;
+  padding-top: 1vh;
   gap: 50%;
 }
 
@@ -313,6 +320,7 @@ body {
   justify-content: space-evenly;
   gap: 25vh;
 }
+
 
 .products {
   display: flex;
@@ -375,6 +383,10 @@ body {
   text-align: end;
 }
 
+
+
+/*discover more section*/
+
 .discover {
   background-color: var(--color-tertiary);
   justify-content: space-evenly;
@@ -388,6 +400,7 @@ body {
   gap: 5vw;
 }
 
+/*item page showing 1 item*/
 .item {
   padding: 0vh 20vw 5vh 20vw;
 }
@@ -545,9 +558,11 @@ input[type="submit"] {
   color: var(--color-tertiary);
 }
 
+/*
 input:valid {
   background-color: lightseagreen;
 }
+*/
 
 input:invalid {
   background-color: tomato;

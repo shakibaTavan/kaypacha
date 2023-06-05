@@ -3,6 +3,10 @@
     color: black;
     font-weight: 1000;
   }
+
+  .currentLocationImg {
+    border-bottom: 2px solid var(--color-primary);
+  }
   
   .btn {
     text-decoration: none;

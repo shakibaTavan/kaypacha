@@ -1,4 +1,4 @@
-function myFunction() {
+function navFunction() {
   var x = document.getElementById("navBarDisplay");
   if (x.className === "navBar") {
     x.className += " responsive";

@@ -12,42 +12,44 @@
     <body>
         <header>
             <div class="logo-banner">
+                <a href="index.html">
                 <img src="images/logo1.svg">
+                </a>
+                <a href="cart.html" class="logo-banner__cart">
                 <img
                     class="logo-banner__cart"
-                    src="images/🦆 icon _shopping bag_.png"
+                    src="images/🦆 icon _shopping bag_.svg"
                     alt="shopping cart Icon">
-                <div class="icon-container">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
+                </a>
             </div>
 
             <nav class="navBar" id="navBarDisplay">
                 <ul>
+                    <div class="icon-container">
+                        <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+                    </div>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li class="dropdown currentLocation">
-                        <a class="dropdown__btn" ></a>
+                    <li class="currentLocation dropdown">
+                        <a class="dropdown__btn"></a>
                             <a>Instruments</a>
                             <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </button>
                         <div class="dropdown__items">
-                            <a href="#">Kalimbas</a>
+                            <a href="instruments.html">Kalimbas</a>
                             <a href="#">Drums</a>
                             <a href="#">Flutes</a>
                         </div>
                     </li>
                     <li>
-                        Music
-                        <a href="music.html"></a>
+                        <a href="music.html">Music</a>
                     </li>
                     <li>
                         Tutorials
                     </li>
                     <li>
-                        Contact
-                        <a href="contact.html"></a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
@@ -57,100 +59,100 @@
                     </li>
                 </ul>
             </nav>
-
         </header>
         
         <main>
-            <section class="search">
-                <input class="search__input" type="text" placeholder="Search..">
-                <a href="instruments.html">
-                <img class="search__icon" src="images/search_icon.png" alt="search Icon">
-                </a>
-            </section>
-
-            <section class="results-container">
-            <section class="search-tools">
-                <p>Showing results for “Kalimba”</p>
-                <div>
-                    <a class="btn btn-primary">Refine</a>
-                    <a class="btn btn-primary">Sort &#8645;
+                <section class="search">
+                    <input class="search__input" type="text" placeholder="Search..">
+                    <a href="instruments.html">
+                    <img class="search__icon" src="images/search_icon.png" alt="search Icon">
                     </a>
-                </div>
-            </section>
-            <section class="products">
-                <div class="product-card">
-                    <img src="images/Kalimbas/BondiBrownRippleKoa.png" alt="Brown Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>Bondi RippleKoa Kalimba</h2>
-                        <h3>$50</h3>
-                        <a href="product1.html"class="btn btn-secondary">VIEW</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="images/Kalimbas/Sela SE.png" alt="light Brown Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>Sela SE 245 Kalimba</h2>
-                        <h3>$50</h3>
-                        <a class="btn btn-secondary">VIEW</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="images/Kalimbas/Bondi Ripple Koa.png" alt="light Bondi Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>Bondi Koa Kalimba</h2>
-                        <h3>$79</h3>
-                        <a class="btn btn-secondary">VIEW</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>17-Key Wood Kalimba</h2>
-                        <h3>$79</h3>
-                        <a class="btn btn-secondary">VIEW</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>Bondi Rainbow Kalimba</h2>
-                        <h3>$79</h3>
-                        <a class="btn btn-secondary">VIEW</a>
-                    </div>
-                </div>
-            </section>
-            <p> < 1 > </p>
-        </section>
+                </section>
+
+                <section class="results-container">
+                    <section class="search-tools">
+                        <p>Showing results for “Kalimba”</p>
+                        <div>
+                            <a class="btn btn-primary">Refine</a>
+                            <a class="btn btn-primary">Sort &#8645;
+                            </a>
+                        </div>
+                    </section>
+                    
+                    <section class="products">
+                        <div class="product-card">
+                            <img src="images/Kalimbas/BondiBrownRippleKoa.png" alt="Brown Kalimba">
+                            <div class="product-card__description">
+                                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <h2>Bondi RippleKoa Kalimba</h2>
+                                <h3>$50</h3>
+                                <a href="product1.html"class="btn btn-secondary">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/Kalimbas/Sela SE.png" alt="light Brown Kalimba">
+                            <div class="product-card__description">
+                                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <h2>Sela SE 245 Kalimba</h2>
+                                <h3>$50</h3>
+                                <a class="btn btn-secondary">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/Kalimbas/Bondi Ripple Koa.png" alt="light Bondi Kalimba">
+                            <div class="product-card__description">
+                                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <h2>Bondi Koa Kalimba</h2>
+                                <h3>$79</h3>
+                                <a class="btn btn-secondary">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
+                            <div class="product-card__description">
+                                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <h2>17-Key Wood Kalimba</h2>
+                                <h3>$79</h3>
+                                <a class="btn btn-secondary">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
+                            <div class="product-card__description">
+                                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <h2>Bondi Rainbow Kalimba</h2>
+                                <h3>$79</h3>
+                                <a class="btn btn-secondary">VIEW</a>
+                            </div>
+                        </div>
+                    </section>
+                    <h1 class="main-title">&#60; 1 &#62;</h1>
+                </section>
 
 
-            <section class="discover">
-                <h1 class="special-title">Discover More</h1>
-                <section class="discover__products">
-                <div class="product-card">
-                    <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>17-Key Wood Kalimba</h2>
-                        <h3>$79</h3>
-                        <a class="btn btn-secondary">VIEW</a>
+                <section class="discover">
+                    <h1 class="special-title">Discover More</h1>
+                    <section class="discover__products">
+                    <div class="product-card">
+                        <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
+                        <div class="product-card__description">
+                            <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <h2>17-Key Wood Kalimba</h2>
+                            <h3>$79</h3>
+                            <a class="btn btn-secondary">VIEW</a>
+                        </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
-                    <div class="product-card__description">
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <h2>Bondi Rainbow Kalimba</h2>
-                        <h3>$79</h3>
-                        <a class="btn btn-secondary">VIEW</a>
+                    <div class="product-card">
+                        <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
+                        <div class="product-card__description">
+                            <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <h2>Bondi Rainbow Kalimba</h2>
+                            <h3>$79</h3>
+                            <a class="btn btn-secondary">VIEW</a>
+                        </div>
                     </div>
-                </div>
-            </section>
-            </section>
+                </section>
+                </section>
             
         </main>
         <footer>

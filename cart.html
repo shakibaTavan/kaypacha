@@ -4,10 +4,60 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="function.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/style.css">
-        <title>form demo</title>
+        <title>kaypacha</title>
     </head>
+    <header>
+        <div class="logo-banner">
+            <img src="images/logo1.svg">
+            <img
+                class="logo-banner__cart"
+                src="images/🦆 icon _shopping bag_.png"
+                alt="shopping cart Icon">
+            <div class="icon-container">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </div>
+
+        <nav class="navBar" id="navBarDisplay">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown currentLocation">
+                    <a class="dropdown__btn">
+                        <a>Instruments</a>
+                        <i class="fa fa-caret-down"></i>
+                        </a>
+                    <div class="dropdown__items">
+                        <a href="#">Kalimbas</a>
+                        <a href="#">Drums</a>
+                        <a href="#">Flutes</a>
+                    </div>
+                </li>
+                <li>
+                    Music
+                    <a href="music.html"></a>
+                </li>
+                <li>
+                    Tutorials
+                </li>
+                <li>
+                    Contact
+                    <a href="contact.html"></a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    Support
+                </li>
+            </ul>
+        </nav>
+    </header>
     <body>
         <h1>page with form</h1>
         <p>let's get user input via a form...</p>

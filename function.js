@@ -1,3 +1,4 @@
+// responsiv nav bar function
 function navFunction() {
   var x = document.getElementById("navBarDisplay");
   if (x.className === "navBar") {
@@ -7,6 +8,7 @@ function navFunction() {
   }
 }
 
+// read more function with read less collapse 
 function myFunction() {
   var cut = document.getElementById("cut");
   var moreText = document.getElementById("extra");
@@ -23,6 +25,7 @@ function myFunction() {
   }
 }
 
+// pop-up message function after adding item to cart
 function added() {
   var message = document.getElementById("added-message");
   var overlay = document.getElementById("dimmer");
@@ -36,7 +39,7 @@ function added() {
   });
 }
 
-
+// pop-up message function after placing order in check out 
 function orderPlaced() {
   var message = document.getElementById("added-message");
   var overlay = document.getElementById("dimmer");

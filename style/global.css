@@ -40,9 +40,8 @@
   
   
   .btn-primary-inverse:hover {
-    background-color: var(--color-tertiary);
-    color: var(--color-primary);
-    transform:translateY(-1px)
+    transform:translateY(-1px);
+    text-decoration: underline;
   }
   
   
@@ -99,5 +98,14 @@
     text-align: center;
     padding-top: 3vh;
     padding-bottom: 3vh;
+  }
+
+  .special-input {
+    border: 1px solid var(--color-secondary);
+    opacity: 1;
+    background-color: white;
+    color: var(--color-secondary);
+    border-radius: 25px;
+    padding: 0.5rem 0.5rem;
   }
   

@@ -1,76 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="function.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>kaypacha</title>
   </head>
+  <div id="dimmer"></div>
   <body>
     <header>
       <div class="logo-banner">
-        <img src="images/logo1.svg" />
-        <img
-          class="logo-banner__cart"
-          src="images/🦆 icon _shopping bag_.png"
-          alt="shopping cart Icon"
-        />
-        <div class="icon-container">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
-            >&#9776;</a
-          >
-        </div>
+        <a href="index.html">
+          <img src="images/logo1.svg">
+        </a>
+        <a href="cart.html" class="logo-banner__cart">
+          <img class="logo-banner__cart currentLocationImg" src="images/🦆 icon _shopping bag_.svg"
+            alt="shopping cart Icon">
+        </a>
       </div>
 
       <nav class="navBar" id="navBarDisplay">
         <ul>
+          <div class="icon-container">
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+          </div>
           <li>
             <a href="index.html">Home</a>
           </li>
-          <li class="dropdown currentLocation">
-            <a class="dropdown__btn">
-              <a>Instruments</a>
-              <i class="fa fa-caret-down"></i>
-            </a>
+          <li class="dropdown">
+            <a class="dropdown__btn"></a>
+            <a>Instruments</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
             <div class="dropdown__items">
-              <a href="#">Kalimbas</a>
+              <a href="instruments.html">Kalimbas</a>
               <a href="#">Drums</a>
               <a href="#">Flutes</a>
             </div>
           </li>
           <li>
-            Music
-            <a href="music.html"></a>
+            <a href="music.html">Music</a>
           </li>
-          <li>Tutorials</li>
           <li>
-            Contact
-            <a href="contact.html"></a>
+            Tutorials
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
           </li>
           <li>
             <a href="about.html">About</a>
           </li>
-          <li>Support</li>
+          <li>
+            Support
+          </li>
         </ul>
       </nav>
     </header>
-    <h1>Page after submit</h1>
+    <main>
 
-    <ul id="qs"></ul>
-    <script>
-      let vars = window.location.search.split("&");
-      vars.forEach((v) => {
-        let newP = document.createElement("li");
-        newP.textContent = v;
-        document.querySelector("#qs").appendChild(newP);
-      });
-    </script>
+      <section class="search">
+        <input class="search__input" type="text" placeholder="Search..">
+        <a href="instruments.html">
+          <img class="search__icon" src="images/search_icon.png" alt="search Icon">
+        </a>
+      </section>
+
+      <section class="checkout-area">
+        <h1 class="special-title">Secure Checkout</h1>
+        <div>
+
+        </div>
+
+        <form>
+          <h1 class="main-title">Details > <span class="underline-bold">Payment</span></h1>
+          <div class="cart-total">
+            <h2 class="item-count">2 Items</h2>
+            <h2 class="price">$120</h2>
+          </div>
+
+          <div>
+            <label for="card number">Card Number</label>
+            <input type="text" id="card#" name="card#" required minlength="16" max="16" pattern="[0-9]*" placeholder="000000000000"/>
+          </div>
+
+          <div>
+            <label for="expirey">Expires</label>
+            <input type="date" id="expirey" name="expirey"/>
+          </div>
+          <div>
+            <label for="code">Security code</label>
+            <input id="security" name="address" required minlength="3" maxlength="3" min="1" placeholder="000" />
+          </div>
+          <div>
+            <label for="name">Cardholder Name</label>
+            <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*"/>
+        </div>
+          <div class="message btn-primary-inverse place-order" onclick="orderPlaced()">Place Order</div>
+        </form>
+      </section>
+
+      <div class="message-content" id="added-message">
+        <a class="close-btn">&#x2716;</a>
+        <h1 class="special-title">Order reference #2135874 
+          has been received.</h2>
+        <h2 class="main-title">Order confirmation and tracking sent to email.</h1>
+        <a href="index.html" class="btn btn-primary-inverse">SHOP MORE</a>
+    </div>
+
+
+      </section>
+      <section class="discover">
+        <h1 class="special-title">Discover More</h1>
+        <section class="discover__products">
+          <div class="product-card">
+            <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
+            <div class="product-card__description">
+              <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+              <h2>17-Key Wood Kalimba</h2>
+              <h3>$79</h3>
+              <a class="btn btn-secondary">VIEW</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
+            <div class="product-card__description">
+              <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+              <h2>Bondi Rainbow Kalimba</h2>
+              <h3>$79</h3>
+              <a class="btn btn-secondary">VIEW</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+      <footer>
+        <h1 class="special-title">Keep in touch!</h1>
+        <img src="images/home/social media.svg" alt="soocial media icons">
+        <p>Site created by Kaypacha - Córdoba Argentina, Copyright © 1993-2023 kaypacha.com.ar
+          All elements of this website, including graphics and multimedia content, are protected by copyright.</p>
+      </footer>
+    </main>
   </body>
-</html>
+
+  </html>

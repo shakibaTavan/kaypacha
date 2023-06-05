@@ -184,7 +184,8 @@ body {
 
 .search__icon {
   height: 3vh;
-  position: absolute;
+  position: relative;
+  right: 30px;
   vertical-align: middle;
 }
 
@@ -538,43 +539,9 @@ footer > p {
   text-align: center;
 }
 
-form {
-  width: 50em;
-  background-color: var(--color-tertiary);
-  padding: 1vw;
-  border: 2px var(--color-primary);
-}
-
-form label {
-  display: inline-block;
-  width: 10em;
-}
-
-form input,
-textarea {
-  width: 45em;
-  margin: 0.5vw;
-  padding: 0.5vw;
-  border-radius: 0.2vw;
-}
-
-input[type="submit"] {
-  width: 10vw;
-  background-color: var(--color-primary);
-  color: var(--color-tertiary);
-}
-
-/*
-input:valid {
-  background-color: lightseagreen;
-}
-*/
-
-input:invalid {
-  background-color: tomato;
-}
 
 .message-content {
+  height: 250px;
   display: none;
   position: fixed;
   top: 50%;

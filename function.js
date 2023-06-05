@@ -35,3 +35,18 @@ function added() {
     overlay.classList.remove("show");
   });
 }
+
+
+function orderPlaced() {
+  var message = document.getElementById("added-message");
+  var overlay = document.getElementById("dimmer");
+  message.classList.add("show");
+  overlay.classList.add("show");
+
+  var closeButton = document.querySelector(".close-btn");
+  closeButton.addEventListener("click", function () {
+    message.classList.remove("show");
+    overlay.classList.remove("show");
+  });
+}
+

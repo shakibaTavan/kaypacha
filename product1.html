@@ -14,42 +14,44 @@
     <body>
         <header>
             <div class="logo-banner">
+                <a href="index.html">
                 <img src="images/logo1.svg">
+                </a>
+                <a href="cart.html" class="logo-banner__cart">
                 <img
                     class="logo-banner__cart"
-                    src="images/🦆 icon _shopping bag_.png"
+                    src="images/🦆 icon _shopping bag_.svg"
                     alt="shopping cart Icon">
-                <div class="icon-container">
-                <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
-            </div>
+                </a>
             </div>
 
             <nav class="navBar" id="navBarDisplay">
                 <ul>
+                    <div class="icon-container">
+                        <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+                    </div>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li class="dropdown currentLocation">
-                        <a class="dropdown__btn" ></a>
+                    <li class="currentLocation dropdown">
+                        <a class="dropdown__btn"></a>
                             <a>Instruments</a>
                             <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </button>
                         <div class="dropdown__items">
-                            <a href="#">Kalimbas</a>
+                            <a href="instruments.html">Kalimbas</a>
                             <a href="#">Drums</a>
                             <a href="#">Flutes</a>
                         </div>
                     </li>
                     <li>
-                        Music
-                        <a href="music.html"></a>
+                        <a href="music.html">Music</a>
                     </li>
                     <li>
                         Tutorials
                     </li>
                     <li>
-                        Contact
-                        <a href="contact.html"></a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
@@ -59,7 +61,6 @@
                     </li>
                 </ul>
             </nav>
-
         </header>
         <main>
             <section class="search">

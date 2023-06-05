@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="function.js"></script>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>kaypacha</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-banner">
+            <a href="index.html">
+                <img src="images/logo1.svg">
+            </a>
+            <a href="cart.html" class="logo-banner__cart">
+                <img class="logo-banner__cart currentLocationImg" src="images/🦆 icon _shopping bag_.svg"
+                    alt="shopping cart Icon">
+            </a>
+        </div>
+
+        <nav class="navBar" id="navBarDisplay">
+            <ul>
+                <div class="icon-container">
+                    <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+                </div>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown__btn"></a>
+                    <a>Instruments</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown__items">
+                        <a href="instruments.html">Kalimbas</a>
+                        <a href="#">Drums</a>
+                        <a href="#">Flutes</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+                <li>
+                    Tutorials
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    Support
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <input class="search__input" type="text" placeholder="Search..">
+            <a href="instruments.html">
+                <img class="search__icon" src="images/search_icon.png" alt="search Icon">
+            </a>
+        </section>
+
+        <section class="checkout-area">
+        <h1 class="special-title">Secure Checkout</h1>
+        <div>
+
+        </div>
+
+        <form action="viewcart.html" >
+            <h1 class="main-title"><span class="underline-bold">Details</span> > Payment </h1>
+            <div class="cart-total">
+                <h2 class="item-count">2 Items</h2><h2 class="price">$120</h2>
+            </div>
+            <div>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required minlength="2"/>
+            </div>
+
+            <div>
+                <label for="name">*First Name and Last Name</label>
+                <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*"
+                    oninvalid="this.setCustomValidity('please enter only letters, space, hyphen')" />
+            </div>
+            <div>
+                <label for="phone" required minlength="9">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+61" />
+            
+            </div>
+            <div>
+                <label for="text">Delivery Address *</label>
+                <input id="address" name="address" required minlength="20" min="1" />
+            </div> 
+            <div>
+                <label for="text">Delivery instructions</label>
+                <input id="instructions" name="instructions" min="1" placeholder="optional" />
+            </div>
+                <input class="btn-primary-inverse" type="submit" value="PROCEED TO PAYMENT">
+        </form>
+
+    </section>
+    <section class="discover">
+        <h1 class="special-title">Discover More</h1>
+        <section class="discover__products">
+        <div class="product-card">
+            <img src="images/Kalimbas/Rainbow.png" alt="light Bondi Kalimba">
+            <div class="product-card__description">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <h2>17-Key Wood Kalimba</h2>
+                <h3>$79</h3>
+                <a class="btn btn-secondary">VIEW</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/Kalimbas/17-Key Koa.png" alt="light Bondi Kalimba">
+            <div class="product-card__description">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <h2>Bondi Rainbow Kalimba</h2>
+                <h3>$79</h3>
+                <a class="btn btn-secondary">VIEW</a>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+<footer>
+<h1 class="special-title">Keep in touch!</h1>
+<img src="images/home/social media.svg" alt="soocial media icons">
+<p>Site created by Kaypacha - Córdoba Argentina, Copyright © 1993-2023 kaypacha.com.ar
+    All elements of this website, including graphics and multimedia content, are protected by copyright.</p>
+</footer>
+    </main>
+</body>
+
+</html>
